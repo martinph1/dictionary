@@ -1,0 +1,10 @@
+message server_command {
+    
+    enum command {
+        NOP = 0;
+        START = 1;
+        DISCONNECT = 20;
+    }
+        
+    required command command_id = 1;      
+}
